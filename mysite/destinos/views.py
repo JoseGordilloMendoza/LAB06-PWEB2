@@ -1,3 +1,4 @@
+from PIL import Image
 from django.shortcuts import render, redirect
 from .models import DestinosTuristicos
 from django.shortcuts import render, get_object_or_404
