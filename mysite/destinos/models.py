@@ -1,5 +1,4 @@
 from django.conf import settings
-from PIL import Image
 from django.db import models
 
 class DestinosTuristicos(models.Model):
