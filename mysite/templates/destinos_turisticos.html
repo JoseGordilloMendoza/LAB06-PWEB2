@@ -16,14 +16,14 @@
         </div>
         <nav>
             <ul>
-                <li><a href="http://127.0.0.1:8000/" class="sub">Inicio</a></li>
+                <li><a href="http://127.0.0.1:8000/" class="sub">Pagina principal</a></li>
 
                 {% if user.is_authenticated %}
                     <li class="sub welcome-message">Bienvenido, <span>{{user.first_name}}</span></li>
                     <li><a href="cuenta/logout" class="sub">Salir</a></li>
                 {% else %}
-                    <li><a href="http://127.0.0.1:8000/cuenta/register" class="sub">Registrarse</a></li>
-                    <li><a href="http://127.0.0.1:8000/cuenta/login" class="sub">Ingresar</a></li>
+                    <li><a href="http://127.0.0.1:8000/cuenta/register" class="sub">REGISTER</a></li>
+                    <li><a href="http://127.0.0.1:8000/cuenta/login" class="sub">LOGIN</a></li>
                 {% endif %}
 
                 <li><a href="#" class="carrito" data-counter="0">&#128722;</a></li>
@@ -33,7 +33,7 @@
 
     {% block content %}
     <div class="turismo-peru1">
-        <h2 >LUGARES TURISTICOS</h2>
+        <h2 >TURISMO EN EL PERU</h2>
     </div>
 
     <div class="turismo-peru">
@@ -44,7 +44,6 @@
           <div class="text">
             <p>El Perú es uno de los países más variados del mundo. Un país multicultural, lleno de tradiciones, una laureada </p> 
             <p>gastronomía y vastas reservas naturales. Posee 12 patrimonios mundiales reconocidos por Unesco y es dueño de 84 de las 117 zonas de vida que existen en el mundo.</p>
-            <p>Perú está ubicado en la parte occidental de América del Sur y comparte sus fronteras con Ecuador, Colombia, Brasil, Bolivia y Chile. </p>
             <p>En su vasto territorio, de más de 1.2 millones de km², abarca tres regiones: Costa, Sierra y Selva. Su población actual supera los 31.5 millones de habitantes.</p>
             <p>El español es el idioma oficial del Perú. Sin embargo, en el país se hablan 47 lenguas nativas, incluyendo el quechua y el aymara. </p>
             <p>Gracias al legado de civilizaciones milenarias, Perú alberga más de 5000 lugares arqueológicos. Muchos de ellos se encuentran aún rodeados de misterio, pero igual son capaces de transportar al visitante a la época donde florecieron estas culturas.</p>
@@ -53,7 +52,7 @@
     </div>
 
     <div class="turismo-peru1">
-        <h2 >VIAJES NACIONALES</h2>
+        <h2 >LUGARES TURISTICOS</h2>
     </div>
 
     <main>
@@ -62,9 +61,9 @@
                 <div class="destino">
                     <h2>{{ destino.nombreCiudad }}</h2>
                     <img src="{{ destino.imagenCiudad.url }}" alt="{{ destino.nombreCiudad }}">
-                    <p>Precio: {{ destino.precioTour }}</p>
+                    <p>Precio: S/ {{ destino.precioTour }}</p>
                     {% if destino.ofertaTour %}
-                        <p class="oferta">¡En oferta!</p>
+                        <p class="oferta">Oferta disponible</p>
                     {% endif %}
                     <a href="{% url 'detalle_destino' destino.id %}" class="ver-btn">VER</a>
                 </div>
