@@ -19,7 +19,7 @@
   }
   
  header {
-    background-color: #0a0a0a;
+    background-color: #260303;
     padding: 1px;
     display: flex;
     align-items: center;
@@ -46,6 +46,7 @@ nav ul li {
 }
 
 .sub {
+  font-weight: bold;
     font-family: Arial Black;
     display: inline-block;
     padding: 10px;
@@ -65,7 +66,11 @@ nav ul li {
 .welcome-message span {
     font-weight: bold;
     text-transform: uppercase;
-    color: #555;
+    color: #000000;
+    transition: 0.3s;
+}.welcome-message span:hover {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .carrito {
@@ -112,9 +117,9 @@ nav ul li {
 }
 
 .turismo-peru1 {
-  font-family: Arial Black;
+  font-family: Impact;
   color:#ffffff;
-  background-color: #333;
+  background-color: #160505;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
