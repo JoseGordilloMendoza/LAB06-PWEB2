@@ -354,6 +354,7 @@ nav ul li {
     }
     
     .precio-oferta {
+      font-family: Arial Black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -361,6 +362,7 @@ nav ul li {
     }
     
     .precio {
+      font-family: Arial Black;
         background-color: #ffffff;
         border: 1px solid #dddddd;
         border-radius: 5px;
@@ -368,6 +370,7 @@ nav ul li {
     }
     
     .oferta {
+      font-family: Arial Black;
         padding: 10px;
         background-color: #651b1b;
         color: #ffffff;
@@ -377,9 +380,14 @@ nav ul li {
     }
     
     .comprar-btn {
+      font-family: Arial Black;
         padding: 10px 20px;
-        background-color: #4caf50;
+        background-color: #111611;
         color: #ffffff;
         text-decoration: none;
         border-radius: 5px;
+      transition: 0.4s;
+    }
+    .comprar-btn:hover{
+      transform: scale(1.2);
     }
